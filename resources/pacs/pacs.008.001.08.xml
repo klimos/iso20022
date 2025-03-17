@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AppHdr xmlns="urn:iso:std:iso:20022:tech:xsd:head.001.001.02">
+    <Fr>
+        <FIId>
+            <FinInstnId>
+                <BICFI>BOFAUS3NXXX</BICFI>
+            </FinInstnId>
+        </FIId>
+    </Fr>
+    <To>
+        <FIId>
+            <FinInstnId>
+                <BICFI>CITIGB2LXXX</BICFI>
+            </FinInstnId>
+        </FIId>
+    </To>
+    <BizMsgIdr>MSG123456789</BizMsgIdr>
+    <MsgDefIdr>pacs.008.001.08</MsgDefIdr>
+    <CreDt>2025-03-13T10:15:30</CreDt>
+</AppHdr>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>123456789</MsgId>
+            <CreDtTm>2025-03-13T10:15:30</CreDtTm>
+            <NbOfTxs>1</NbOfTxs>
+            <TtlIntrBkSttlmAmt Ccy="USD">1000.00</TtlIntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-03-14</IntrBkSttlmDt>
+            <SttlmInf>
+                <SttlmMtd>CLRG</SttlmMtd>
+            </SttlmInf>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <InstrId>INSTR12345</InstrId>
+                <EndToEndId>E2E12345</EndToEndId>
+                <TxId>TX12345</TxId>
+            </PmtId>
+            <IntrBkSttlmAmt Ccy="USD">1000.00</IntrBkSttlmAmt>
+            <ChrgBr>SLEV</ChrgBr>
+            <Dbtr>
+                <Nm>John Doe</Nm>
+                <PstlAdr>
+                    <TwnNm>New York</TwnNm>
+                    <Ctry>US</Ctry>
+                </PstlAdr>
+            </Dbtr>
+            <DbtrAcct>
+                <Id>
+                    <IBAN>US12345678901234567890</IBAN>
+                </Id>
+            </DbtrAcct>
+            <DbtrAgt>
+                <FinInstnId>
+                    <BICFI>BOFAUS3NXXX</BICFI>
+                </FinInstnId>
+            </DbtrAgt>
+            <CdtrAgt>
+                <FinInstnId>
+                    <BICFI>CITIGB2LXXX</BICFI>
+                </FinInstnId>
+            </CdtrAgt>
+            <Cdtr>
+                <Nm>Jane Smith</Nm>
+                <PstlAdr>
+                    <TwnNm>London</TwnNm>
+                    <Ctry>GB</Ctry>
+                </PstlAdr>
+            </Cdtr>
+            <CdtrAcct>
+                <Id>
+                    <IBAN>GB29NWBK60161331926819</IBAN>
+                </Id>
+            </CdtrAcct>
+            <RmtInf>
+                <Ustrd>Invoice 12345</Ustrd>
+            </RmtInf>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+</Document>
